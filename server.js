@@ -17,10 +17,10 @@ app.use(express.static("public"));
     res.sendFile(__dirname, '..', '\\public\\index.html');
  })
  app.get("/success",function(req,res){
-    res.sendFile(__dirname, '..', '\\success.html');
+    res.sendFile(__dirname, '..', '\\public\\success.html');
  })
  app.get("/failure",function(req,res){
-    res.sendFile(__dirname, '..', '\\failure.html');
+    res.sendFile(__dirname, '..', '\\public\\failure.html');
  })
  app.get("/covid",function(req,res){
     res.sendFile(__dirname, '..', '\\public\\covid.html');
@@ -38,10 +38,10 @@ app.post("/",function(req,res){
     console.log(dose);
     console.log(favour);
     if (college===""||dose===""||favour===""||name===""||email==="") {
-        res.sendFile(__dirname+"\\failure.html");
+        res.sendFile(path.join(__dirname+"\\public\\failure.html"));
     }
     else{
-        res.sendFile(__dirname+"\\success.html");
+        res.sendFile(__dirname+"\\public\\success.html");
     }    
 })
 
