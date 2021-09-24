@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="container head">
+        <h1>Covid 19 India Tracker</h1>
+        <h3 class="subhead"> Tracking Covid 19 cases in India</h3>
+    </div>
+    <div class="container subhead2">
+        <div class="row rows">
+            <div class="col-2 col-sm-12">
+                <h4>Confirmed</h4>
+                <p id="total_confirmed"></p>
+            </div>
+            <div class="col-2 col-sm-12">
+                <h4>Recovered</h4>
+                <p id="total_recovered"></p>
+            </div>
+            <div class="col-2 col-sm-12">
+                <h4>Deceased</h4>
+                <p id="total_deaths"></p>
+            </div>
+            <div class="col-2 col-sm-12">
+                <h4>Single Vaccinated</h4>
+                <p id="total_vaccinated_1"></p>
+            </div>            
+            <div class="col-2 col-sm-12">
+                <h4>Double Vaccinated</h4>
+                <p id="total_vaccinated_2"></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <table class="table table-striped table-dark">
+            <tr>
+                <th>State</th>
+                <th>Confirmed</th>
+                <th>Recovered</th>
+                <th>Deceased</th>
+                <th>Single Vaccinated</th>
+                <th>Double Vaccinated</th>
+            </tr>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+    </div>
+    <div>
+            <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+</html>
