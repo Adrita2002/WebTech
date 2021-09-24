@@ -47,6 +47,5 @@ app.post("/",function(req,res){
     
 })
 
-app.listen(3020,function () {
-    console.log("Server running at port 3020");
-})
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));

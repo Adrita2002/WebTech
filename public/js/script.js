@@ -78,31 +78,32 @@ $(document).ready(function(){
                     {
                         label: 'Total Confirmed',
                         data: confirmed,
-                        backgroundColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'red',
                         minBarLength: 100,
+                        hoverBorderWidth: 20,
                     },
                     {
                         label: 'Total Recovered',
                         data: recovered,
-                        backgroundColor: 'rgb(0, 99, 132)',
+                        backgroundColor: 'blue',
                         minBarLength: 100,
                     },
                     {
                         label: 'Total Deaths',
                         data: deaths,
-                        backgroundColor: 'rgb(40, 99, 232)',
+                        backgroundColor: 'green',
                         minBarLength: 100,
                     },
                     {
                         label: 'Single Vaccinated',
                         data: vaccinated_1,
-                        backgroundColor: 'rgb(60, 99, 132)',
+                        backgroundColor: 'orange',
                         minBarLength: 100,
                     },
                     {
                         label: 'Double Vaccinated',
                         data: vaccinated_2,
-                        backgroundColor: 'rgba(120, 99, 20)',
+                        backgroundColor: 'purple',
                         minBarLength: 100,
                     }
                 ]
