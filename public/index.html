@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/"><img src="images/covid-logo.png" alt="Covid"></a></div>
+            <button class="hamburger-nav" id="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="/">Home</a></li>
+
+        <li><a href="/covid">Live Covid Data</a></li></ul>
+        
+        </nav>
+    </header>
+    <div class="slider">
+        <figure>
+            <img class="img1" src="images/image1.jpg" alt="">
+            <img class="img2" src="images/image2.jpg" alt="">
+            <img class="img3" src="images/image3.jpg" alt="">
+            <img class="img4" src="images/image4.jpg" alt="">
+            <img class="img5" src="images/image1.jpg" alt="">
+
+            
+
+        </figure>
+    </div>
+   <div class="article"><h2 class="heading">About the COVID-19</h2>
+    <div class="para">
+        <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.</p>
+   <p> Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention.</p>
+    </div>
+    <h2 class="heading">How it Spreads?</h2>
+    <div class="para">
+       <p> The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols.</p>
+        <p>You can be infected by breathing in the virus if you are near someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth. The virus spreads more easily indoors and in crowded settings.</p>
+    </div>
+    <h2 class="heading">Symptomatic vs Asymptomatic</h2>
+    <div class="para">
+          <p>Both terms refer to people who do not have symptoms. The difference is that ‘asymptomatic’ refers to people who are infected but never develop any symptoms, while ‘pre-symptomatic’ refers to infected people who have not yet developed symptoms but go on to develop symptoms later. </p>
+    </div>
+    <h2 class="heading">How to reduce the risk of COVID-19</h2>
+    <div class="para">
+        There are many things you can do to keep yourself and your loved ones safe from COVID-19.
+        <ul>
+        <li>Check to see what national, regional and local authorities are advising so you have the most relevant information for where you are.</li>
+        <li>Stay at least 1 metre away from others, even if they don’t appear to be sick, since people can have the virus without having symptoms.</li>
+        <li>Wear a well-fitting three-layer mask. Clean your hands before putting on and taking off a mask.</li>
+        <li>Avoid crowded places, poorly ventilated, indoor locations and avoid prolonged contact with others. Spend more time outdoors than indoors.
+        <li>Open windows when indoors to increase the amount of outdoor air.</li>
+        <li>Avoid touching surfaces, especially in public settings or health facilities, in case people infected with COVID-19 have touched them. Clean surfaces regularly with standard disinfectants.</li>
+        <li>Frequently clean your hands with soap and water, or an alcohol-based hand rub. If you can, carry alcohol-based rub with you and use it often.</li>
+        <li>Cover your coughs and sneezes with a bent elbow or tissue, throwing used tissues into a closed bin right away. Then wash your hands or use an alcohol-based hand rub.</li>
+       <li> Get vaccinated: It is extremely important now that everybody gets their two shots of vaccination. In order to register yourself for vaccination slot, visit the following sites:<br>
+        <br><ul>
+        <li><a class="sites" href="https://www.aarogyasetu.gov.in/">Aarogya Setu Website</a></li>
+        <br>
+        <li><a class="sites" href="https://www.cowin.gov.in/">Cowin Website</a>
+        </ul></li>
+       </li>
+    </ul>
+    </div>
+
+</div>
+<h1 class="heading">Petition for Offline Classes</h1>
+    <form  action="/" method="post" name="petition">
+        <div class="form">
+        <div class="details">Name: <input class="name" name="name" type="text">
+       </div>
+        <div class="details"> Email: <input class="email" type="email" name="email" id="email"></div>
+        <div class="details"> College Name: <input class="college" type="text" name="college" id="college"></div>
+        <div class="details"> No. of Vaccination Doses: <input type="text" name="dose" ></div>
+        <div class="details">Are you in favour of offline classes? <input type="text" name="favour" id="favour" placeholder="Yes"></div>
+       <input type="submit" id="submit" name="submit" value="Submit">
+    </div>
+    </form>
+<form class="comment-section">
+    <h2 class="heading">COMMENTS SECTION</h2>
+    <div class="note-input">
+        <textarea name="Add Comment" id="addTxt" cols="30" rows="10" placeholder="Add your comments here"></textarea>
+        <input type="submit" value="Add Comment" id="addBtn">
+        
+    </form>
+    <div class="notes" id="row">
+           <!-- <div class="comment-box">
+               <p></p>
+           </div> -->
+           
+       
+</div>
+</body>
+<script src="app.js"></script>
+</html>
