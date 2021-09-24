@@ -42,10 +42,10 @@ app.post("/",function(req,res){
     }
     else{
         res.sendFile(__dirname+"\\public\\success.html");
-    }
-        
-    
+    }    
 })
 
-app.listen(process.env.PORT || 3000, 
-	() => console.log("Server is running..."));
+app.listen(3010,function () {
+    console.log("Server running at port 3020");
+})
+
