@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+   
 }
 
 .navbar{
@@ -126,17 +127,47 @@
 }
 .heading{
     text-align: center;
+    color:maroon
   
 }
 .para{
     padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     
 }
+.paragraph{
+    text-align:justify;
+    font-size:larger;
+    font-style: italic;
+    padding:0 20px;
+}
+
+.image{
+   height:300px;
+   width:500px;
+   margin:20px 0;
+   box-shadow: 3px 3px 3px grey;
+}
+.image img{
+    height:100%;
+    width:100%;
+}
+
 .sites{
     text-decoration: none;
     color:red;
     font-weight:bold;
 }
+.sites:hover{
+   color:mediumvioletred;
+   font-weight: bolder;
+   
+}
+
+   
 #addTxt{
     width: 70vw;
 height: 100px;
@@ -145,9 +176,13 @@ padding: 10px;
 font-weight: bolder;
 margin:20px 0;
 border-radius: 8px;
-border:1px solid;
-
+border:none;
+background-color: #FCD2D1;
+box-shadow: 2px 2px 2px grey;
+color:mediumvioletred;
+outline:none;
 }
+
 
 .note-input{
     display:flex;
@@ -194,14 +229,17 @@ form{
 }
 
 .form{
-    border:1px solid;
+    border:none;
     padding:30px;
+    background-color:#FE8F8F;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     box-shadow: 2px 2px 2px grey;
+    color:#FCD2D1;
+    font-weight: bold;
 }
 .details{
     margin:10px 0;
@@ -213,14 +251,36 @@ form{
 .name{
     width:40vw;
     padding:5px;
+    background-color: #FFEDD3;
+    border:none;
+    border-radius: 8px;
 }
 .email{
     width:40vw;
     padding:5px;
+    background-color: #FFEDD3;
+    border:none;
+    border-radius: 8px;
 }
 .college{
     width:40vw;
     padding:5px;
+    background-color: #FFEDD3;
+    border:none;
+    border-radius: 8px;
+}
+.dose{
+    width:40vw;
+    background-color: #FFEDD3;
+    padding: 5px;
+    border:none;
+    border-radius: 8px;
+}
+.favour{
+    padding: 5px;
+    background-color: #FFEDD3;
+    border:none;
+    border-radius: 8px;
 }
 #submit{
     padding:10px;
@@ -229,4 +289,75 @@ form{
     cursor: pointer;
     border: none;
     border-radius: 8px;
+    
+}
+
+@media screen and (max-width:768px) {
+    .image{
+        height:200px;
+        width:250px;
+        
+        box-shadow: none;
+    }
+    .image img{
+        width:100%;
+        height: 100%;
+    }
+    .name{
+        width:60vw;
+        padding:5px;
+        background-color: #FFEDD3;
+        border:none;
+        border-radius: 8px;
+    }
+    .email{
+        width:60vw;
+        padding:5px;
+        background-color: #FFEDD3;
+        border:none;
+        border-radius: 8px;
+    }
+    .college{
+        width:60vw;
+        padding:5px;
+        background-color: #FFEDD3;
+        border:none;
+        border-radius: 8px;
+    }
+    .dose{
+        width:60vw;
+        background-color: #FFEDD3;
+        padding: 5px;
+        border:none;
+        border-radius: 8px;
+    }
+    .favour{
+        padding: 5px;
+        background-color: #FFEDD3;
+        border:none;
+        border-radius: 8px;
+       
+    }
+    #submit{
+        padding:10px;
+        background-color: black;
+        color:white;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        font-size:smaller;
+        
+    }
+    
+    
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 8vh;
+    width:100%;
+    
 }

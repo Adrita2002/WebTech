@@ -67,6 +67,6 @@ function showNotes() {
     }
     else{
         
-        notesElm.innerHTML="<br><p class='msg'>Please add your comments</p>"//incase there is nothing to show
+        notesElm.innerHTML=`<p class='msg' style="margin:20px 0;">Please add your comments</p>`//incase there is nothing to show
     }
 }
