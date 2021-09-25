@@ -41,7 +41,7 @@ app.post("/",function(req,res){
     if (college===""||dose===""||favour===""||name===""||email==="") {
       var failurepath = 'public/failure.html'  
       res.sendFile(__dirname + '/'+failurepath);
-      // res.sendFile(__dirname+"\\public\\failure.html")
+     
     }
     else{
        var successpath = 'public/success.html'
