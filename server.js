@@ -1,3 +1,4 @@
+const https=require('https');
 const express=require("express");
 const bodyParser=require("body-parser");
 const path=require("path");
@@ -25,7 +26,7 @@ app.use(express.static("public"));
  app.get("/covid",function(req,res){
     res.sendFile(__dirname, '..', '\\public\\covid.html');
  })
-
+var filename = 'public/failure.html'
 app.post("/",function(req,res){
     var name=req.body.name;
     var email=req.body.email;
@@ -38,14 +39,20 @@ app.post("/",function(req,res){
     console.log(dose);
     console.log(favour);
     if (college===""||dose===""||favour===""||name===""||email==="") {
-        res.sendFile(__dirname+"\\public\\failure.html");
+      var failurepath = 'public/failure.html'  
+      res.sendFile(__dirname + '/'+failurepath);
+      // res.sendFile(__dirname+"\\public\\failure.html")
     }
     else{
-        res.sendFile(__dirname+"\\public\\success.html");
-    }
-        
-    
+       var successpath = 'public/success.html'
+       res.sendFile(__dirname+'/'+successpath);
+    }    
 })
 
+// app.listen(3020,function () {
+//     console.log("Server running at port 3020");
+// })
+
+// start the server listening for requests
 app.listen(process.env.PORT || 3000, 
 	() => console.log("Server is running..."));
